@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", Georgia, Cambria, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Custom precise color palette matching the uploaded screenshot */
+  --color-brand-green: #596a5d;   /* The warm grey-sage green of the footer/banner */
+  --color-brand-brown: #4a3f35;   /* The elegant deep bronze-brown of the headings/pills */
+  --color-brand-gold: #b09875;    /* The camel-gold of the buttons (En savoir plus) */
+  --color-brand-sand: #f2ede4;    /* The extremely soft warm sand background */
+  --color-brand-cream: #faf8f5;   /* The ultra light cream background for cards */
+}
+
+/* Strictly enforce the 4 text sizes across the app */
+@utility text-display {
+  font-size: 1.75rem; /* 28px */
+  line-height: 1.2;
+  @media (min-width: 768px) {
+    font-size: 2rem; /* 32px */
+  }
+}
+
+@utility text-heading {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.3;
+  @media (min-width: 640px) {
+    font-size: 1.25rem; /* 20px */
+  }
+}
+
+@utility text-body {
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.5;
+}
+
+@utility text-caption {
+  font-size: 0.6875rem; /* 11px */
+  line-height: 1.4;
+}
+
+/* Custom smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  background-color: #f2ede4;
+  color: #4a3f35;
+}
+
+/* Custom warm scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #ede9e2;
+}
+::-webkit-scrollbar-thumb {
+  background: #dcd7cb;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #596a5d;
+}
+
+
